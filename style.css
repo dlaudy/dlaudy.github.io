@@ -44,9 +44,13 @@ body {
     padding-left: 20px;  /* add space in between */
 }
 
-.container {
+.container, .post-container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.post-container:nth-child(even){
+    background-color: #f2f2f2;
 }
 
 #footer {
@@ -75,11 +79,18 @@ a:hover {
     padding: 60px 0;
 }
 
+.about {
+    text-align: center;
+}
+
 .post-author img {
     height: 50px;
     width: 50px;
     vertical-align: middle;
-    border-radius: 20px;
+}
+
+.post-author img, .about-author img {
+    border-radius: 50%;
 }
 
 .post-author span {
